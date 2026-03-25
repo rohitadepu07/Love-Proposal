@@ -163,7 +163,12 @@ export default function App() {
   };
 
   const generateLink = () => {
-    const baseUrl = window.location.origin + window.location.pathname;
+    const origin = window.location.origin;
+    const path = window.location.pathname.endsWith('/') 
+      ? window.location.pathname 
+      : window.location.pathname + '/';
+    
+    const baseUrl = origin + path;
     const params = new URLSearchParams({
       u: userName,
       c: crushName,
