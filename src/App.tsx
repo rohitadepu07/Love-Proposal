@@ -5,7 +5,7 @@
 
 import { useState, useEffect, useCallback, useRef, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Heart, User, HeartHandshake, Languages, Share2, CheckCircle2, MessageCircle, Copy, ExternalLink, RefreshCw } from 'lucide-react';
+import { Heart, User, HeartHandshake, Languages, Share2, CheckCircle2, MessageCircle, Copy, ExternalLink, RefreshCw, Mail } from 'lucide-react';
 
 type Language = 'en' | 'hi' | 'mr' | 'te';
 
@@ -99,6 +99,7 @@ export default function App() {
   const [lang, setLang] = useState<Language>('en');
   const [userName, setUserName] = useState('');
   const [crushName, setCrushName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
   
   const [noCount, setNoCount] = useState(0);
   const [isYesClicked, setIsYesClicked] = useState(false);
@@ -156,7 +157,7 @@ export default function App() {
 
   const handleStart = (e: FormEvent) => {
     e.preventDefault();
-    if (userName.trim() && crushName.trim()) {
+    if (userName.trim() && crushName.trim() && userEmail.trim()) {
       generateLink();
       setIsLinkCreated(true);
     }
@@ -172,7 +173,8 @@ export default function App() {
     const params = new URLSearchParams({
       u: userName,
       c: crushName,
-      l: lang
+      l: lang,
+      e: userEmail
     });
     const shareUrl = `${baseUrl}?${params.toString()}`;
     setGeneratedLink(shareUrl);
@@ -198,10 +200,12 @@ export default function App() {
     const u = params.get('u');
     const c = params.get('c');
     const l = params.get('l');
+    const e = params.get('e');
 
     if (u && c) {
       setUserName(u);
       setCrushName(c);
+      if (e) setUserEmail(e);
       if (l && Object.keys(TRANSLATIONS).includes(l)) {
         setLang(l as Language);
       }
@@ -209,6 +213,55 @@ export default function App() {
       setIsLinkCreated(false);
     }
   }, []);
+
+  const sendEmailNotification = useCallback(async () => {
+    if (!userEmail || !userEmail.includes('@')) return;
+    
+    // You can get an access key for free at https://web3forms.com/
+    const WEB3FORMS_ACCESS_KEY = "00000000-0000-0000-0000-000000000000"; // Placeholder
+    
+    if (WEB3FORMS_ACCESS_KEY === "00000000-0000-0000-0000-000000000000") {
+      console.log("Email notification skipped: No Web3Forms access key configured.");
+      return;
+    }
+
+    try {
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `💖 ${crushName} said YES to your proposal!`,
+          from_name: "Love Proposal Bot",
+          to_email: userEmail,
+          message: `
+            Great news ${userName}!
+            
+            ${crushName} just accepted your love proposal!
+            
+            Details:
+            - Crush Name: ${crushName}
+            - Language: ${lang}
+            - Response: YES!
+            - Struggle level (No clicks): ${noCount}
+            
+            Sent by contact@k0decraft.in
+          `,
+        }),
+      });
+    } catch (error) {
+      console.error("Failed to send email notification:", error);
+    }
+  }, [userEmail, userName, crushName, noCount, lang]);
+
+  useEffect(() => {
+    if (isYesClicked && !isSetup) {
+      sendEmailNotification();
+    }
+  }, [isYesClicked, isSetup, sendEmailNotification]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -289,6 +342,20 @@ export default function App() {
                     value={crushName}
                     onChange={(e) => setCrushName(e.target.value)}
                     placeholder={t.placeholderCrush}
+                    className="w-full px-4 py-3 rounded-xl border-2 border-pink-100 focus:border-pink-400 outline-none transition-colors text-pink-700 placeholder:text-pink-200"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-semibold text-pink-600 flex items-center gap-2">
+                    <Mail size={16} /> Your Email (for result notification)
+                  </label>
+                  <input
+                    type="email"
+                    required
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    placeholder="Where should I send the good news?"
                     className="w-full px-4 py-3 rounded-xl border-2 border-pink-100 focus:border-pink-400 outline-none transition-colors text-pink-700 placeholder:text-pink-200"
                   />
                 </div>
