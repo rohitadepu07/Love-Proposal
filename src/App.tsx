@@ -92,7 +92,7 @@ const TRANSLATIONS = {
   }
 };
 
-const SUCCESS_IMAGE = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/T86i6yDyKQzONEMPKd/giphy.gif";
+const SUCCESS_IMAGE = "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif";
 
 export default function App() {
   const [isSetup, setIsSetup] = useState(true);
@@ -332,7 +332,7 @@ export default function App() {
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="text-center space-y-6 py-4"
+              className="text-center space-y-8 max-w-md w-full flex flex-col items-center"
             >
               <div className="bg-pink-50 p-4 rounded-full w-20 h-20 mx-auto flex items-center justify-center">
                 <CheckCircle2 className="text-pink-500 w-10 h-10" />
@@ -498,16 +498,18 @@ export default function App() {
               </h1>
               
               {userPhone && (
-                <motion.button
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.6 }}
-                  onClick={handleWhatsAppResult}
-                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-2xl font-bold shadow-lg transition-colors flex items-center gap-2 text-lg mt-4 cursor-pointer mx-auto"
-                >
-                  <MessageCircle size={24} />
-                  Tell {userName} on WhatsApp! 💖
-                </motion.button>
+                <div className="flex justify-center w-full">
+                  <motion.button
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6 }}
+                    onClick={handleWhatsAppResult}
+                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-2xl font-bold shadow-lg transition-colors flex items-center gap-2 text-lg mt-4 cursor-pointer"
+                  >
+                    <MessageCircle size={24} />
+                    Tell {userName} on WhatsApp! 💖
+                  </motion.button>
+                </div>
               )}
 
               <div className="flex justify-center gap-2">
