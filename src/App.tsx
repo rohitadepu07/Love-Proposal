@@ -23,10 +23,10 @@ const TRANSLATIONS = {
     no: "No",
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
-      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Think one more time! 😫", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful please say yes! How much code will you make me write 😭", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
+      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
+      { text: "Think one more time! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCq+JA/giphy.gif" },
+      { text: "Beautiful please say yes! How much code will you make me write 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -43,10 +43,10 @@ const TRANSLATIONS = {
     no: "No",
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
-      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Ek aur baar soch lo! 😫", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Man jao na! Kitna code likh waogi 😭", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
+      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
+      { text: "Ek aur baar soch lo! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
+      { text: "Beautiful pls Man jao na! Kitna code likh waogi 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -63,10 +63,10 @@ const TRANSLATIONS = {
     no: "No",
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
-      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Aankhi ekda vichar kar! 😫", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Manya kar na! Kitna code lihila lavnar 😭", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
+      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
+      { text: "Aankhi ekda vichar kar! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
+      { text: "Beautiful pls Manya kar na! Kitna code lihila lavnar 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -83,16 +83,16 @@ const TRANSLATIONS = {
     no: "No",
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
-      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Inkokasari alochinchu! 😫", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Oppuko na! Inka entha code rayisthavu 😭", image: "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
+      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
+      { text: "Inkokasari alochinchu! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
+      { text: "Beautiful pls Oppuko na! Inka entha code rayisthavu 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   }
 };
 
-const SUCCESS_IMAGE = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/l0HlIDU8qnwEBvTcA/giphy.gif";
+const SUCCESS_IMAGE = "https://media.giphy.com/media/l0HlIDU8qnwEBvTcA/giphy.gif";
 
 export default function App() {
   const [isSetup, setIsSetup] = useState(true);
@@ -223,7 +223,7 @@ export default function App() {
 
   if (isSetup) {
     return (
-      <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 font-sans">
+      <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 font-sans select-none">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -384,7 +384,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 overflow-hidden font-sans">
+    <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 overflow-hidden font-sans select-none">
       <AnimatePresence mode="wait">
         {!isYesClicked ? (
           <motion.div
