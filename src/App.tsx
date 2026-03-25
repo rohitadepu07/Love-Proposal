@@ -92,7 +92,7 @@ const TRANSLATIONS = {
   }
 };
 
-const SUCCESS_IMAGE = "https://media.giphy.com/media/l0HlIDU8qnwEBvTcA/giphy.gif";
+const SUCCESS_IMAGE = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHI0Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1z/T86i6yDyKQzONEMPKd/giphy.gif";
 
 export default function App() {
   const [isSetup, setIsSetup] = useState(true);
@@ -503,7 +503,7 @@ export default function App() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                   onClick={handleWhatsAppResult}
-                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-2xl font-bold shadow-lg transition-colors flex items-center gap-2 text-lg mt-4 cursor-pointer"
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-2xl font-bold shadow-lg transition-colors flex items-center gap-2 text-lg mt-4 cursor-pointer mx-auto"
                 >
                   <MessageCircle size={24} />
                   Tell {userName} on WhatsApp! 💖
