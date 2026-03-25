@@ -233,7 +233,7 @@ export default function App() {
 
   if (isSetup) {
     return (
-      <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 font-sans select-none relative">
+      <div className="min-h-screen bg-pink-50 flex flex-col items-center p-4 font-sans select-none relative pt-24">
         {/* Branding Logo */}
         <div className="fixed top-6 left-6 z-50 flex items-center gap-2">
           <div className="bg-pink-100 p-2 rounded-xl shadow-sm">
@@ -415,7 +415,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 overflow-hidden font-sans select-none relative">
+    <div className="min-h-screen bg-pink-50 flex flex-col items-center p-4 overflow-x-hidden font-sans select-none relative pt-24">
       {/* Branding Logo */}
       <div className="fixed top-6 left-6 z-50 flex items-center gap-2">
         <div className="bg-pink-100 p-2 rounded-xl shadow-sm">
@@ -550,13 +550,27 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <footer className="fixed bottom-6 w-full text-center space-y-1 z-40">
-        <p className="text-pink-300 text-[10px] font-medium uppercase tracking-widest opacity-70">
-          {t.madeWith}
-        </p>
-        <p className="text-pink-200 text-[10px]">
-          © 2024 Love Proposal · Crafted by <a href="https://k0decraft.in" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 underline transition-colors">k0decraft</a>
-        </p>
+      <div className="flex-grow" />
+
+      <footer className="w-screen bg-gray-900 py-12 px-6 mt-20 relative z-40">
+        <div className="max-w-4xl mx-auto flex flex-col items-center space-y-4">
+          <div className="flex items-center gap-2 mb-2">
+            <div className="bg-pink-500/10 p-2 rounded-lg">
+              <Heart className="text-pink-500 fill-pink-500" size={16} />
+            </div>
+            <span className="text-pink-500 font-bold uppercase tracking-widest text-xs">Love Proposal</span>
+          </div>
+          
+          <p className="text-gray-400 text-sm font-medium text-center">
+            {t.madeWith}
+          </p>
+          
+          <div className="h-px w-24 bg-gray-800" />
+          
+          <p className="text-gray-500 text-[11px] text-center">
+            © 2024 Love Proposal · Developed by <a href="https://k0decraft.in" target="_blank" rel="noopener noreferrer" className="text-pink-500/80 hover:text-pink-400 underline decoration-pink-500/30 transition-all font-semibold italic">k0decraft</a>
+          </p>
+        </div>
       </footer>
     </div>
   );
