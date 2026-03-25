@@ -18,15 +18,15 @@ const TRANSLATIONS = {
     placeholderYour: "Enter your name",
     placeholderCrush: "Enter your crush's name",
     createBtn: "Create Proposal ✨",
-    from: "from",
+    from: "With Love... from",
     yes: "Yes",
     no: "No",
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
       { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Think one more time! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCq+JA/giphy.gif" },
-      { text: "Beautiful please say yes! How much code will you make me write 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: "Please think again! 🤨", image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdldzhndTZjYmJnOGFnaHVicmJ1ZTlmaXM3ZW8zNW54ZmlkMXpqOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cr12Y3D9SbvJAp0E4P/giphy.gif" },
+      { text: "Think one more time! 😫", image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd5MjJzcnp5d3ZuZXV2cWtlZjFtdnRhOXdjZTRiZzl3cmYyeTRyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XYEEvoX0Ub69ZgN9ai/giphy.gif" },
+      { text: "Cuttieee... please say yes! How much code will you make me write 😭", image: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyY3BsaDFnYXd5d29yMHJ1ZGE3ajB0bXJwOWIxamN5MHFpcXJlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2aw9gwZlltbdX92b4w/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -44,9 +44,9 @@ const TRANSLATIONS = {
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
       { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Ek aur baar soch lo! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Man jao na! Kitna code likh waogi 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: "Please think again! 🤨", image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdldzhndTZjYmJnOGFnaHVicmJ1ZTlmaXM3ZW8zNW54ZmlkMXpqOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cr12Y3D9SbvJAp0E4P/giphy.gif" },
+      { text: "Ek aur baar soch lo! 😫", image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd5MjJzcnp5d3ZuZXV2cWtlZjFtdnRhOXdjZTRiZzl3cmYyeTRyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XYEEvoX0Ub69ZgN9ai/giphy.gif" },
+      { text: "Cuttieee... pls Man jao na! Kitna code likh waogi 😭", image: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyY3BsaDFnYXd5d29yMHJ1ZGE3ajB0bXJwOWIxamN5MHFpcXJlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2aw9gwZlltbdX92b4w/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -64,9 +64,9 @@ const TRANSLATIONS = {
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
       { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Aankhi ekda vichar kar! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Manya kar na! Kitna code lihila lavnar 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: "Please think again! 🤨", image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdldzhndTZjYmJnOGFnaHVicmJ1ZTlmaXM3ZW8zNW54ZmlkMXpqOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cr12Y3D9SbvJAp0E4P/giphy.gif" },
+      { text: "Aankhi ekda vichar kar! 😫", image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd5MjJzcnp5d3ZuZXV2cWtlZjFtdnRhOXdjZTRiZzl3cmYyeTRyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XYEEvoX0Ub69ZgN9ai/giphy.gif" },
+      { text: "Cuttieee... pls Manya kar na! Kitna code lihila lavnar 😭", image: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyY3BsaDFnYXd5d29yMHJ1ZGE3ajB0bXJwOWIxamN5MHFpcXJlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2aw9gwZlltbdX92b4w/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   },
@@ -84,15 +84,15 @@ const TRANSLATIONS = {
     madeWith: "Made with ❤️ for you",
     stages: (name: string) => [
       { text: `Do you love me ${name}? 🥺`, image: "https://media.giphy.com/media/cLS1cfxvGOPVpf9g3y/giphy.gif" },
-      { text: "Please think again! 🤨", image: "https://media.giphy.com/media/3o7TKVUn7iM8FMEU24/giphy.gif" },
-      { text: "Inkokasari alochinchu! 😫", image: "https://media.giphy.com/media/26BRv0ThflsHCqfJA/giphy.gif" },
-      { text: "Beautiful pls Oppuko na! Inka entha code rayisthavu 😭", image: "https://media.giphy.com/media/l41lTfuxV7l0P3Q76/giphy.gif" }
+      { text: "Please think again! 🤨", image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDdldzhndTZjYmJnOGFnaHVicmJ1ZTlmaXM3ZW8zNW54ZmlkMXpqOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cr12Y3D9SbvJAp0E4P/giphy.gif" },
+      { text: "Inkokasari alochinchu! 😫", image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDd5MjJzcnp5d3ZuZXV2cWtlZjFtdnRhOXdjZTRiZzl3cmYyeTRyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XYEEvoX0Ub69ZgN9ai/giphy.gif" },
+      { text: "Cuttieee... pls Oppuko gaa! Inka entha code rayisthavu 😭", image: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3hyY3BsaDFnYXd5d29yMHJ1ZGE3ajB0bXJwOWIxamN5MHFpcXJlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2aw9gwZlltbdX92b4w/giphy.gif" }
     ],
     success: (name: string) => `I knew it! You Love me a lot ${name} 🥰`
   }
 };
 
-const SUCCESS_IMAGE = "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif";
+const SUCCESS_IMAGE = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmwzemlpM2ZyeXl3OTJ3Y3RvZmt1Z2lkeGk2aDAxYnkxZGxtbzllcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/icIr8rk03xQI6NS67S/giphy.gif";
 
 export default function App() {
   const [isSetup, setIsSetup] = useState(true);
@@ -100,7 +100,7 @@ export default function App() {
   const [userName, setUserName] = useState('');
   const [crushName, setCrushName] = useState('');
   const [userPhone, setUserPhone] = useState('');
-  
+
   const [noCount, setNoCount] = useState(0);
   const [isYesClicked, setIsYesClicked] = useState(false);
   const [noButtonPos, setNoButtonPos] = useState({ x: 0, y: 0 });
@@ -117,24 +117,24 @@ export default function App() {
   const moveNoButton = useCallback(() => {
     if (noCount >= stages.length - 1 && noButtonRef.current) {
       setIsMoving(true);
-      
+
       const btnRect = noButtonRef.current.getBoundingClientRect();
       const btnWidth = btnRect.width;
       const btnHeight = btnRect.height;
-      
+
       const padding = 20;
       const maxX = window.innerWidth - btnWidth - padding;
       const maxY = window.innerHeight - btnHeight - padding;
-      
+
       const newAbsX = Math.max(padding, Math.random() * maxX);
       const newAbsY = Math.max(padding, Math.random() * maxY);
-      
+
       const container = noButtonRef.current.parentElement;
       if (container) {
         const containerRect = container.getBoundingClientRect();
         const naturalX = containerRect.left + (containerRect.width / 2);
         const naturalY = containerRect.top + (containerRect.height / 2);
-        
+
         setNoButtonPos({
           x: newAbsX - naturalX,
           y: newAbsY - naturalY
@@ -165,10 +165,10 @@ export default function App() {
 
   const generateLink = () => {
     const origin = window.location.origin;
-    const path = window.location.pathname.endsWith('/') 
-      ? window.location.pathname 
+    const path = window.location.pathname.endsWith('/')
+      ? window.location.pathname
       : window.location.pathname + '/';
-    
+
     const baseUrl = origin + path;
     const params = new URLSearchParams({
       u: userName,
@@ -233,8 +233,16 @@ export default function App() {
 
   if (isSetup) {
     return (
-      <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 font-sans select-none">
-        <motion.div 
+      <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 font-sans select-none relative">
+        {/* Branding Logo */}
+        <div className="fixed top-6 left-6 z-50 flex items-center gap-2">
+          <div className="bg-pink-100 p-2 rounded-xl shadow-sm">
+            <Heart className="text-pink-500 fill-pink-500" size={20} />
+          </div>
+          <span className="text-lg font-bold text-pink-600 tracking-tight hidden sm:block">Love Proposal</span>
+        </div>
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-white p-8 rounded-3xl shadow-2xl w-full max-w-md space-y-6 border-4 border-pink-200"
@@ -263,11 +271,10 @@ export default function App() {
                         key={l.id}
                         type="button"
                         onClick={() => setLang(l.id as Language)}
-                        className={`px-4 py-2 rounded-xl border-2 transition-all ${
-                          lang === l.id 
-                            ? 'border-pink-500 bg-pink-50 text-pink-600' 
-                            : 'border-pink-100 text-pink-300 hover:border-pink-200'
-                        }`}
+                        className={`px-4 py-2 rounded-xl border-2 transition-all ${lang === l.id
+                          ? 'border-pink-500 bg-pink-50 text-pink-600'
+                          : 'border-pink-100 text-pink-300 hover:border-pink-200'
+                          }`}
                       >
                         {l.label}
                       </button>
@@ -337,7 +344,7 @@ export default function App() {
               <div className="bg-pink-50 p-4 rounded-full w-20 h-20 mx-auto flex items-center justify-center">
                 <CheckCircle2 className="text-pink-500 w-10 h-10" />
               </div>
-              
+
               <div className="space-y-2">
                 <h2 className="text-2xl font-bold text-pink-600">Proposal Ready! 💖</h2>
                 <p className="text-pink-400">Share this link with {crushName || 'your crush'} to see their reaction!</p>
@@ -367,7 +374,7 @@ export default function App() {
                   <MessageCircle size={20} />
                   Share on WhatsApp
                 </button>
-                
+
                 <button
                   onClick={() => setIsSetup(false)}
                   className="w-full bg-white border-2 border-pink-200 text-pink-500 font-bold py-3 rounded-xl hover:bg-pink-50 transition-colors flex items-center justify-center gap-2"
@@ -375,7 +382,7 @@ export default function App() {
                   <ExternalLink size={20} />
                   Preview Proposal
                 </button>
-                
+
                 <button
                   onClick={() => {
                     setIsLinkCreated(false);
@@ -408,7 +415,15 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 overflow-hidden font-sans select-none">
+    <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4 overflow-hidden font-sans select-none relative">
+      {/* Branding Logo */}
+      <div className="fixed top-6 left-6 z-50 flex items-center gap-2">
+        <div className="bg-pink-100 p-2 rounded-xl shadow-sm">
+          <Heart className="text-pink-500 fill-pink-500" size={20} />
+        </div>
+        <span className="text-lg font-bold text-pink-600 tracking-tight hidden sm:block">Love Proposal</span>
+      </div>
+
       <AnimatePresence mode="wait">
         {!isYesClicked ? (
           <motion.div
@@ -496,7 +511,7 @@ export default function App() {
               <h1 className="text-4xl font-bold text-pink-600 flex items-center justify-center gap-2">
                 {t.success(crushName)}
               </h1>
-              
+
               {userPhone && (
                 <div className="flex justify-center w-full">
                   <motion.button
@@ -535,8 +550,13 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      <footer className="fixed bottom-4 text-pink-300 text-sm font-medium">
-        {t.madeWith}
+      <footer className="fixed bottom-6 w-full text-center space-y-1 z-40">
+        <p className="text-pink-300 text-[10px] font-medium uppercase tracking-widest opacity-70">
+          {t.madeWith}
+        </p>
+        <p className="text-pink-200 text-[10px]">
+          © 2024 Love Proposal · Crafted by <a href="https://k0decraft.in" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 underline transition-colors">k0decraft</a>
+        </p>
       </footer>
     </div>
   );
